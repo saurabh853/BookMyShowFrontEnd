@@ -29,7 +29,7 @@ const Home = (props) => {
     return false;
   };
 
-  //check whether all seats have input 0
+  /*check whether all seats have input 0*/
   const checkZeroSeatsValidity = (seats) => {
     for (let seat in seats) {
       if (Number(seats[seat]) > 0) {
@@ -39,7 +39,7 @@ const Home = (props) => {
     return true;
   };
 
-  //validating the user selection and then making post request to save the booking details
+  /*validating the user selection and then making post request to save the booking details*/
   const handleBookNow = () => {
     if (!movie) {
       setErrorPopup(true);

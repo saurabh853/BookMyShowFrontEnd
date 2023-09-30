@@ -11,9 +11,9 @@ const LastBookingDetails = (props) => {
   const { handleGetLastBooking, lastBookingDetails } = context;
 
   useEffect(() => {
-    //calling get last booking api to get the last booking details
+    /*calling get last booking api to get the last booking details*/
     handleGetLastBooking(url);
-    // eslint-disable-next-line
+    /* eslint-disable-next-line*/
   }, []);
 
   return (

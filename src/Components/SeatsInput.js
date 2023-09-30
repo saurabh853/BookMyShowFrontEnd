@@ -9,11 +9,11 @@ const SeatsInput = ({
   text,
   index,
 }) => {
-  //changing the seats according to user input
+  /*changing the seats according to user input*/
   const change_seats = (e) => {
     changeNoOfSeats({ ...noOfSeat, [e.target.name]: Number(e.target.value) });
 
-    //setting seats in localsorage
+    /*setting seats in localsorage*/
     window.localStorage.setItem(
       "seats",
       JSON.stringify({
@@ -23,7 +23,7 @@ const SeatsInput = ({
     );
   };
 
-  //highlighting the seat
+  /*highlighting the seat*/
   const handleChecked = (text) => {
     changeSeats(text);
   };

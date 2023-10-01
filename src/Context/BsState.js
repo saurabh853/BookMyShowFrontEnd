@@ -32,7 +32,7 @@ const BsState = (props) => {
   const handlePostBooking = async (url) => {
     /* Sending api request to backend with user selected movie, slot and seats to book movie.*/
     const response = await fetch(
-      `${url}api/booking`,
+      `${url}/api/booking`,
       {
         method: "POST",
         headers: {
@@ -69,8 +69,9 @@ const BsState = (props) => {
 
   /*handle get request to get the last booking details from backend*/
   const handleGetLastBooking = async (url) => {
+    console.log(url)
     const response = await fetch(
-      `${url}api/booking`,
+      `${url}/api/booking`,
       {
         method: "GET",
       }

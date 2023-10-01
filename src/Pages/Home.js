@@ -6,7 +6,7 @@ import Modal from "../Components/ModalComponent";
 import "../Css/Home.css";
 import BsContext from "../Context/BsContext";
 import { useContext } from "react";
-const url = "https://turquoise-panda-sock.cyclic.cloud";
+const url = "http://localhost:8080/";
 const Home = (props) => {
   const context = useContext(BsContext);
   const {

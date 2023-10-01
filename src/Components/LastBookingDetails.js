@@ -5,7 +5,7 @@ import BsContext from "../Context/BsContext";
 import { seats } from "../data";
 
 const LastBookingDetails = (props) => {
-  const url = "https://turquoise-panda-sock.cyclic.cloud";
+  const url = "http://localhost:8080/";
   const context = useContext(BsContext);
 
   const { handleGetLastBooking, lastBookingDetails } = context;

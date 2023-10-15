@@ -39,7 +39,3 @@ The frontend server (client) is responsible for presenting the user with the web
 
 - `src/`: Contains the source code for the frontend application.
 - `public/`: Static assets and HTML template.
-
-### Important Notes
-
-- All fetch requests to the backend are proxied to `http://localhost:8080`, so there's no need to specify the full URL.

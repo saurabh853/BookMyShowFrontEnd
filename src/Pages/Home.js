@@ -4,12 +4,12 @@ import SelectSeats from "../Components/SelectSeats";
 import TimeShedule from "../Components/TimeShedule";
 import Modal from "../Components/ModalComponent";
 import "../Css/Home.css";
-import BsContext from "../Context/BsContext";
+import BookMyShowContext from "../Context/BookMyShowContext";
 import { useContext } from "react";
 const url = "https://turquoise-panda-sock.cyclic.cloud";
 
 const Home = (props) => {
-  const context = useContext(BsContext);
+  const context = useContext(BookMyShowContext);
   const {
     movie,
     time,

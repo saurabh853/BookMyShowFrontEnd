@@ -1,10 +1,10 @@
 import React, { useContext } from "react";
-import BsContext from "../Context/BsContext";
+import BookMyShowContext from "../Context/BookMyShowContext";
 import "../Css/ModalComponent.css";
 
 /* Modal which takes two props (heading and message), this is called using function showMsg of context.*/
 function Modal(props) {
-  const context = useContext(BsContext);
+  const context = useContext(BookMyShowContext);
   const { errorPopup, errorMessage, setErrorPopup, setErrorMessage } = context;
 
   /*setting errorPopup to false and errorMessage to "" on close modal*/
@@ -27,7 +27,6 @@ function Modal(props) {
             </div>
             <div className="modal-footer">
               <button onClick={handleClosePopup}>Close</button>
-              {/* <button onClick={notOk}>Cancel</button> */}
             </div>
           </div>
         </div>

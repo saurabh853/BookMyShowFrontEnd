@@ -1,11 +1,11 @@
 import React, { useContext } from "react";
-import RadioComponent from "./RadioComponent";
+import RadioBtnComponent from "./RadioBtnComponent";
 import { moviesList } from "../data";
-import BsContext from "../Context/BsContext";
+import BookMyShowContext from "../Context/BookMyShowContext";
 import "../Css/SelectMovie.css";
 
 const SelectMovie = () => {
-  const context = useContext(BsContext);
+  const context = useContext(BookMyShowContext);
 
   /* Getting movie and change movie components from the context.*/
   const { movie, changeMovie } = context;
@@ -23,7 +23,7 @@ const SelectMovie = () => {
       <div className="SM_main_container">
         {moviesList.map((el, index) => {
           return (
-            <RadioComponent
+            <RadioBtnComponent
               text={el}
               changeSelection={handleChangeMovie}
               data={movie}

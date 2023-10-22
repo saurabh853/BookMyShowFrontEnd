@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
-import BsContext from "./BsContext";
+import BookMyShowContext from "./BookMyShowContext";
 
-const BsState = (props) => {
+const BookMyShowState = (props) => {
   
   /*error popup*/
   const [errorPopup, setErrorPopup] = useState(false);
@@ -26,7 +26,7 @@ const BsState = (props) => {
   });
 
   /* Last movie booking details.*/
-  const [lastBookingDetails, setLastBookingDetails] = useState(null);
+  const [lastBookingDetail, setLastBookingDetails] = useState(null);
 
   /* handling post request to save booking details on the backend*/
   const handlePostBooking = async (url) => {
@@ -68,7 +68,7 @@ const BsState = (props) => {
   };
 
   /*handle get request to get the last booking details from backend*/
-  const handleGetLastBooking = async (url) => {
+  const getLastBooking = async (url) => {
     console.log(url)
     const response = await fetch(
       `${url}/api/booking`,
@@ -102,25 +102,25 @@ const BsState = (props) => {
   
   return (
     // providing all the required data to app
-    <BsContext.Provider
+    <BookMyShowContext.Provider
       value={{
         handlePostBooking: (url)=>handlePostBooking(url),
-        handleGetLastBooking: (url) => handleGetLastBooking(url),
+        getLastBooking: (url) => getLastBooking(url),
         movie,
         changeMovie,
         time,
         changeTime,
         noOfSeat,
         changeNoOfSeats,
-        lastBookingDetails,
+        lastBookingDetail,
         errorPopup,
         setErrorPopup,
         errorMessage,
         setErrorMessage,
       }}>
       {props.children}
-    </BsContext.Provider>
+    </BookMyShowContext.Provider>
   );
 };
 
-export default BsState;
+export default BookMyShowState;

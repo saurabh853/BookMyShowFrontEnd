@@ -1,12 +1,12 @@
 import React, { useState, useContext } from "react";
 import { seats } from "../data";
 import "../Css/SelectSeats.css";
-import BsContext from "../Context/BsContext";
+import BookMyShowContext from "../Context/BookMyShowContext";
 import SeatsInput from "./SeatsInput";
 
 const SelectSeats = () => {
   const [seat, changeSeats] = useState([]);
-  const context = useContext(BsContext);
+  const context = useContext(BookMyShowContext);
   const { noOfSeat, changeNoOfSeats } = context;
 
   return (

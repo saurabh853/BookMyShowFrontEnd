@@ -1,11 +1,11 @@
 import React, { useContext } from "react";
-import RadioComponent from "./RadioComponent";
+import RadioBtnComponent from "./RadioBtnComponent";
 import { slots } from "../data";
 import "../Css/TimeShedule.css";
-import BsContext from "../Context/BsContext";
+import BookMyShowContext from "../Context/BookMyShowContext";
 
 const TimeShedule = () => {
-  const context = useContext(BsContext);
+  const context = useContext(BookMyShowContext);
 
   /* Getting time and change changeTime components from the context.*/
   const { time, changeTime } = context;
@@ -24,7 +24,7 @@ const TimeShedule = () => {
         <div className="TS_main_container">
           {slots.map((el, index) => {
             return (
-              <RadioComponent
+              <RadioBtnComponent
                 text={el}
                 changeSelection={handleChangeTime}
                 data={time}

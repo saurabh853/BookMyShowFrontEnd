@@ -1,13 +1,13 @@
 import React from "react";
 import "./App.css";
-import BsState from "./Context/BsState";
+import BookMyShowState from "./Context/BookMyShowState";
 import Home from "./Pages/Home";
 function App() {
   return (
     <>
-      <BsState>
+      <BookMyShowState>
         <Home />
-      </BsState>
+      </BookMyShowState>
     </>
   )
 }

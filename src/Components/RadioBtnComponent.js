@@ -1,8 +1,8 @@
 import React from "react";
-import "../Css/RadioComponent.css";
+import "../Css/RadioBtnComponent.css";
 
 /*This the radio component which is used for selecting movie and slot.*/
-const RadioComponent = ({ text, changeSelection, data }) => {
+const RadioBtnComponent = ({ text, changeSelection, data }) => {
   /* Changing selected data from the user.*/
   const handleChecked = (value) => {
     changeSelection(value);
@@ -20,4 +20,4 @@ const RadioComponent = ({ text, changeSelection, data }) => {
   );
 };
 
-export default RadioComponent;
+export default RadioBtnComponent;

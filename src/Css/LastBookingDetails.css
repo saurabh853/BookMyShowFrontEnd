@@ -1,62 +1,67 @@
 .last_booking_details_container {
   padding: 10px 20px;
   border-radius: 5px;
-  border: 2px solid  rgb(67, 186, 246);
-  box-shadow: inset 2px 3px 9px 6px  rgba(5, 69, 207, 0.699);
+  border: 2px solid #ff7f50;
+  box-shadow: inset 2px 3px 9px 6px rgba(255,127,80,0.1);
+  color: #333; /* Add this line */
 }
 
 .last_booking_details_container{
   display: flex;
   flex-direction: column;
 }
+
 .last_booking_details_header {
-  font-size: 22px;
-  margin-bottom: 10px;
+ font-size:22px; 
+ margin-bottom:10px; 
+ color: #333; /* Add this line */
 }
 
 .seats_container {
-  margin-bottom: 10px;
+ margin-bottom:10px; 
 }
 
 .seats_header {
-  font-size: 18px;
-  font-weight: 500;
-  margin-bottom: 5px;
+ font-size:18px; 
+ font-weight:500; 
+ margin-bottom:5px; 
+ color: #333; /* Add this line */
 }
 
 .seats_container .seats {
-  list-style-type: none;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: flex-start;
+ list-style-type:none; 
+ display:flex; 
+ flex-wrap:wrap; 
+ justify-content:flex-start; 
 }
 
 .seat_value {
-  width: 60px;
-  padding: 5px;
-  border-radius: 5px;
-  background-color: rgb(0, 207, 207);
-  margin-right: 10px;
-  margin-bottom: 10px;
-  text-align: center;
+ width:60px; 
+ padding:5px; 
+ border-radius:5px; 
+ background-color:#ff7f50; 
+ margin-right:10px; 
+ margin-bottom:10px; 
+ text-align:center; 
+ color: #333; /* Add this line */
 }
 
 .slot,
 .movie {
-  margin-bottom: 10px;
-  font-size: 18px;
-  font-weight: 500;
+ margin-bottom:10px; 
+ font-size:18px; 
+ font-weight:500; 
+ color: #333; /* Add this line */
 }
 
 .slot span,
 .movie span {
-  font-weight: 400;
-  font-size: 16px;
+ font-weight:400; 
+ font-size:16px; 
+ color: #333; /* Add this line */
 }
 
-
-
-
 .last_booking_details_container .no_previous_booking {
-  font-size: 15px;
+ font-size:15px;
+ color: #333; /* Add this line */  
 }
